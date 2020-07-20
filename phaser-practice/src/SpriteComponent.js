@@ -7,21 +7,23 @@ export default function SpriteComponent() {
       }
       
       function create() {
-        // Create a sprite game object here!
-        this.add.sprite(50, 80, 'codey')
-      
+        codey = this.add.sprite(30, 200, 'codey')
       }
-
-
+      
+      // Create your update() function here
+      
       const config = {
-        type: Phaser.AUTO,
-        width: 450,
-        height: 600,
-        backgroundColor: "#5f2a55",
-        scene: {
-        create,
-        preload
-        }
+          type: Phaser.AUTO,
+          width: 400,
+          height: 400,
+          backgroundColor: "#5f2a55",
+          scene: {
+          preload,
+          create,
+          // Include update here!
+          }
+      }
+      
     }
     
     

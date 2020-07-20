@@ -13,7 +13,16 @@ export default function SpriteComponent() {
       }
 
 
-
+      const config = {
+        type: Phaser.AUTO,
+        width: 450,
+        height: 600,
+        backgroundColor: "#5f2a55",
+        scene: {
+        create,
+        preload
+        }
+    }
     
     
     return (

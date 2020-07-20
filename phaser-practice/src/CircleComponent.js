@@ -8,13 +8,12 @@ export default function CircleComponent() {
   let circle4 = this.add.circle(300, 400, 10, 0x00E030);
     
   const config = {
-	type: Phaser.AUTO,
-	width: 450,
-	height: 600,
-	scene: {
-    create
-	}
-}
+    width: 400,
+    height: 500,
+    backgroundColor: 0xffff77
+  }
+  
+  const game = new Phaser.Game(config)
 
 const game = new Phaser.Game(config)
     

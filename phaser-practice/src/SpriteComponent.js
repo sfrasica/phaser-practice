@@ -10,8 +10,7 @@ export default function SpriteComponent() {
         codey = this.add.sprite(30, 200, 'codey')
       }
       
-      // Create your update() function here
-      
+   
       const config = {
           type: Phaser.AUTO,
           width: 400,
@@ -20,9 +19,15 @@ export default function SpriteComponent() {
           scene: {
           preload,
           create,
-          // Include update here!
+
           }
       }
+
+
+        function update() {
+            gameState.circle.y += 1
+        }
+  
       
     }
     

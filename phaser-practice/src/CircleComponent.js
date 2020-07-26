@@ -17,6 +17,17 @@ export default function CircleComponent() {
 
 const game = new Phaser.Game(config)
     
+
+function create() {
+    gameState.codey = this.add.sprite(30, 50, 'codey')
+    gameState.cursors = this.input.keyboard.createCursorKeys()
+  }
+  
+  function update() {
+    if (gameState.cursors.down.isDown) {
+      gameState.codey.y += 1;
+    }
+  }
     
     return (
         <div>

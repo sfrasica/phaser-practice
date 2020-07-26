@@ -28,9 +28,21 @@ export default function SpriteComponent() {
             gameState.circle.y += 1
         }
   
-      
-    }
+    function gameState() {
+
+    gameState.switchedOn = 'rect1';
+
     
+    gameState.rect2.setInteractive();
+
+
+    gameState.rect2.on('pointerup', function() {
+        gameState.rect1.fillColor = gameState.offColor;
+        gameState.rect2.fillColor = gameState.onColor;
+    })
+
+}
+
     
     return (
         <div>

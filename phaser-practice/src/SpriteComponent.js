@@ -103,7 +103,19 @@ function moveBobLeft () {
     gameState.player.setVelocityX(-150) * speed;
     gameState.player.setVelocityY(0) * speed;
   }
-  
+
+  // A type of function that ends current Game and transition to End Scene
+  endGame () {
+    // Stop sprites moving
+    this.physics.pause();
+    // Transition to end scene w/fade
+    this.cameras.main.fade(800, 0, 0, 0, false, function (camera, progress) {
+      if (progress > .5) {
+        this.scene.stop('GameScene');
+        this.scene.start('EndScene');
+      }
+    });
+  }
     return (
         <div>
             

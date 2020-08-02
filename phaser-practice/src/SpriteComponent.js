@@ -96,6 +96,14 @@ switch(selectedTurtle){
     console.log('This is Master Splinter.')
 } 
     
+function moveBobLeft () {
+    // In the image, Bob looks to the right so we flip the image
+    gameState.player.flipX = true;
+    gameState.player.setTexture('bob-side');
+    gameState.player.setVelocityX(-150) * speed;
+    gameState.player.setVelocityY(0) * speed;
+  }
+  
     return (
         <div>
             

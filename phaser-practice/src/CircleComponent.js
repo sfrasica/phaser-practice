@@ -30,8 +30,14 @@ function create() {
   
     
     return (
+
         <div>
            {game} 
+           <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+           </ul>
         </div>
     )
 }

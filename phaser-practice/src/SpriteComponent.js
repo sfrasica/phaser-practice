@@ -77,6 +77,24 @@ function movementUpdate() {
     gameState.awesome.play();
   })
 
+  let selectedTurtle = 'Leonardo';
+
+switch(selectedTurtle){
+  case 'Michelangelo':
+    console.log('Cowabunga');
+    break;
+  case 'Raphael':
+    console.log('Let\'s get \'em!');
+    break;
+  case 'Donatello':
+    console.log('I\'ll hack into the mainframe in a second.')
+    break;
+  case 'Leonardo':
+    console.log('Follow my lead after I give the all clear.')
+    break;
+  default:
+    console.log('This is Master Splinter.')
+} 
     
     return (
         <div>

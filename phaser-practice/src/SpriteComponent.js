@@ -114,7 +114,10 @@ function moveBobLeft () {
         this.scene.stop('GameScene');
         this.scene.start('EndScene');
       }
+
     });
+    const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
   }
 
   //Setting boundaries

@@ -19,6 +19,15 @@ const game = new Phaser.Game(config)
     
 function circleUpdate() {
     gameState.circle.y += 1
+
+    const changeCircle = day => {
+        if (day === 'Wednesday') {
+          return true;
+        } else {
+          return false;
+        }
+      };
+      
   }
 
   

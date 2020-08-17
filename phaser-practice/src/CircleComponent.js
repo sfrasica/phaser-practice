@@ -82,6 +82,36 @@ function create() {
       return 'error';
    }
   };
+
+  const determineWinner = (userChoice, computerChoice) => {
+    if(userChoice === computerChoice){
+      return 'You tied with the computer!'
+    }
+    if (userChoice === 'rock'){
+      if (computerChoice === 'paper') {
+        return 'The computer won!'
+      } else {
+        return 'You won!';
+      }
+    }
+    if (userChoice === 'paper') {
+      if (computerChoice === 'scissors'){
+        return 'The computer won!'
+      } else {
+        return 'You won!';
+      }
+    }
+    if (userChoice === 'scissors') {
+      if (computerChoice === 'rock') {
+        return 'The computer won!'
+      } else {
+        return 'You won!';
+      }
+    }
+    if (userChoice === 'bomb') {
+      return 'You obliterated the computer!'
+    }
+  }
   
     
     return (

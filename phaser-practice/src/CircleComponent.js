@@ -58,6 +58,15 @@ function create() {
     gameState.codey = this.add.sprite(30, 50, 'codey')
     gameState.cursors = this.input.keyboard.createCursorKeys()
   }
+
+  const getUserChoice = userInput => {
+    userInput = userInput.toLowerCase()
+    if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
+      return userInput;
+    } else {
+      console.log('You didn\'t select a valid choice.')
+    }
+  };
   
   
     

@@ -120,6 +120,10 @@ function create() {
   
     return determineWinner(userChoice, computerChoice)
   }
+
+  const selectGame = () => {
+   const chooseWinner();
+  }
   
   console.log(playGame());
   

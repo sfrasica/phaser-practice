@@ -112,14 +112,7 @@ function create() {
       return 'You obliterated the computer!'
     }
   }
-  const playGame = () => {
-    const userChoice = getUserChoice('bomb')
-    const computerChoice = getComputerChoice();
-    console.log(`You threw: ${userChoice}`);
-    console.log(`The computer threw: ${computerChoice}.`);
   
-    return determineWinner(userChoice, computerChoice)
-  }
 
   const selectGame = () => {
    const chooseWinner();

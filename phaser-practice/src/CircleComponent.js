@@ -41,9 +41,7 @@ function circleUpdate() {
         console.log(`Remember to buy ${item3}`);
       }
 
-      function sayThanks(name) {
-        console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
-      }
+     
 
   }
 

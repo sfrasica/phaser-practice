@@ -127,7 +127,7 @@ function moveBobLeft () {
   // Create the Bob sprite and set boundaries for it
   gameState.player = this.physics.add.sprite(240, 500, 'bob-front').setScale(.8);
   this.physics.world.setBounds(0, 0, 480, 600);  // Slightly above score
-  gameState.player.setCollideWorldBounds(true);
+
   gameState.player.body.collideWorldBounds = true;
     return (
         <div>

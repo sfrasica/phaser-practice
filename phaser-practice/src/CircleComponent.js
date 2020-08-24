@@ -45,12 +45,6 @@ function circleUpdate() {
         console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
       }
 
-      function Monster(age, color, snack, hobby) {
-          this.age = age,
-          this.color = color,
-          this.snack = snack,
-          this.hobby = hobby
-      };
   }
 
   
